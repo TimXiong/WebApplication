@@ -1,4 +1,4 @@
-# Using github in VS Code
+# Using Github in VS Code
 
 ## Install 
 - vs code 
@@ -20,8 +20,8 @@
 - Copy the address of the new repository
 - Use these command
     ```
-    git remote add origin xxxx (repository github address)
-    git pull origin master
+    $git remote add origin xxxx (repository github address)
+    $git pull origin master
     ```
 
 ## Clone 
@@ -29,7 +29,7 @@ It's another way
 
 ## FQ
 + Q: first pull code from github failed : fatal: refusing to merge unrelated histories
-- A: use this command option (-allow-unrelated-histories) eg: 
-    ```
-    $git pull origin master –allow-unrelated-histories
-    ```
+    - use this command option (-allow-unrelated-histories) eg: 
+        ```
+        $git pull origin master –allow-unrelated-histories
+        ```

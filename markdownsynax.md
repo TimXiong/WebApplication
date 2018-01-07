@@ -1,75 +1,77 @@
-
+# Markdown syntax
 
 Markdown is a better way to write HTML, withou all the complexities and ugliness that usually accompanies it
 
-Headings 
-
+## Headings 
 from h1 through h6 are constructed with a # for each level. 
 
 html :
+```html
 <hi>Heading</h1>
+<h2>Heading</h2>
+```
 
-Comments
+## Comments
 
+```
 <!--
 This is comment
 -->
+```
 
-Horizontal Rules
+## Horizontal Rules
 
 ___ : three consecutive underscores
 --- : three consecutive dashes
 *** : three consecutive asterisks
 
 html:
+```html
 <hr>
+```
 
-Body copy
-
-html:
-<p>
-
-Emphasis
-
-Bold
-
+## Bold
 **Bold Font**
 
 html:
-<strong>
+```html
+<strong>Bold Font</strong>
+```
 
-Italics
-
+## Italics
 _Italics Font_
 
 html:
-<em>
+```html
+<em>Italics font</em>
+```
 
-Strikethrough
-
+## Strikethrough
 ~~Strike Through Font~~
 
 html:
-<del>
+```html
+<del>Strike through font</del>
+```
 
-Blockquotes
-
+## Blockquotes
 add > before any text you want to quote
 
 > **Bold Font** other words.
 
 html:
-<bolckquote>
+```html
+<blockquote>Block quotes</blocquote>
+```
 
-nested:
+### Nested
 
 > my test 
 >> my nested test
 
-Lists
+## Lists
 
-Unordered
-
+### Unordered
 a list of items in which the order of the items does not explicitly matter.
 
 * valid bullet
@@ -77,54 +79,59 @@ a list of items in which the order of the items does not explicitly matter.
     - valid bullet
 
 html:
-<ul><li>
+```html
+<ul>
+    <li></li>
+</ul>
+```
 
-ordered 
+### Ordered 
 
 1. itemA
 2. itemB
 2. itemC
 
 html:
+```html
+<ol>
+    <li></li>
+</ol>
+```
 
-<ol><li>
-
-Code
-
-Inline code
-
+## Inline code
 Wrap inline snippets of code with `
 
 html:
-<code>
+```html
+<code>abs</code>
+```
 
-Indented code
-
+## Indented code
 Or indent several lines of code by at least four spaces
 
 html:
+```html
 <pre>
     <code></code>
 </pre>
+```
 
-Block code "fences"
-
+## Block code "fences"
 Use "fences" ``` to block in multiple lines of code. 
 
 ``` markup
 This is a sample 
 ```
 
-Syntax highlighting
-
+## Syntax highlighting
 To activate it, simply add the file extension of the language you want to use directly after the first code "fence", 
-eg : ```js
+```js
+ var a = 1 // this is javascript
+```
 
-tip : 
-For syntax highlighting to work, the higlight plugin needs to be installed and enabled. it in turn utilizes a jquery plugin, so jquery needs to be loaded in your theme too. 
+> For syntax highlighting to work, the higlight plugin needs to be installed and enabled. it in turn utilizes a jquery plugin, so jquery needs to be loaded in your theme too. 
 
-Table 
-
+## Table 
 Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header. Note that the pipes do not need to be vetically aligned. 
 
 | Option | Description |
@@ -133,8 +140,7 @@ Tables are created by adding pipes as dividers between each cell, and by adding 
 | data data | this is 
 my test text 3 |
 
-Right aligned text
-
+## Right aligned text
 Adding a colon on the right side of the dashed below any heading will right align text for that column.
 
 | Option | Description |
@@ -143,14 +149,16 @@ Adding a colon on the right side of the dashed below any heading will right alig
 | data data | this is 
 my test text 3 |
 
-Links 
+## Links 
 
-basic link 
+### Basic Link 
 
-[Have a link](http://mylink.com)
+[I am a link](http://mylink.com)
 
 html:
-<a herf=""></a>
+```html
+<a herf="http://mylink.com">I am a link</a>
+```
 
 add a title
 
